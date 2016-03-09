@@ -1,0 +1,19 @@
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: darkblue;
+    font: bolder 2.3em times;
+}
+
+p {
+    font: 1.3em fantasy;
+}
+
+ul {
+    color: darkred;
+    font: italic small-caps 1.2em arial;
+}
+
