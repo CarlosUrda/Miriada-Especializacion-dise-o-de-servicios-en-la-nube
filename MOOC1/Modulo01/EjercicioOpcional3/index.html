@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Herencia</title>
+        <style type="text/css">
+            /*
+               Valores de la tupla: (A, B, C, D)
+               A: Estilo situado en línea.
+               B: Número de id's en el selector.
+               C: Número de clases en el selector.
+               D: Número de elementos (no anteriores) en el selector.
+            */
+            body #caja .cabecera h1 {   /* (0, 1, 1, 2) */
+                color: green;
+            }
+            #caja .cabecera h1 {        /* (0, 1, 1, 1) */
+                color: yellow;
+            }
+            #caja header h1 {           /* (0, 1, 0, 2) */
+                color: blue;
+            }
+            body h1 {                   /* (0, 0, 0, 2) */
+                color: red;
+            }
+            h1 {                        /* (0, 0, 0, 1) */
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="caja">    
+            <header class="cabecera"> 
+                <h1 style="color:brown;"> <!-- (1, 0, 0, 0) <= ÉSTE SE APLICA--> 
+                    Cabecera: header
+                </h1>
+            </header>            
+        </div>
+    </body>
+</html>
+
