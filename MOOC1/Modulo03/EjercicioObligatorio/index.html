@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Date (Ejercicio Obligatorio Módulo 3)</title>
+  	<meta charset="UTF-8">
+  	<style type="text/css">
+  		body {
+  			background-color: lightyellow;
+  			padding: 15px 30px 0px 30px;
+  		}
+  		#bloque code {
+  			font-weight: bold; 
+  			font-style: normal;
+  			font-size: 1.2em;
+  		}
+
+  		#bloque li {
+  			margin-top: 10px;
+  			font-style: italic;
+  		}
+
+  		header {
+  			padding: 1px;
+  			background-color: lightgreen;
+  			border-radius: 30px;
+  			text-align: center;
+  			margin-bottom: 40px;
+  		}
+
+  		section#propiedades {
+			margin: 40px 0px 0px 0px;
+  		}
+  	</style>
+</head>
+<body>
+	<header>
+		<h1 id="h1"></h1>
+		<h2>Carlos A. Gómez Urda</h2>
+	</header>
+	<section>
+		<h2 id="h2">Fecha y Hora</h2>
+		<div id="fecha"></div>
+	</section>
+	<section id="propiedades">
+		<h2>Propiedades</h2>
+		<div id="bloque"></div>
+	</section>
+
+	<script type="text/javascript">
+		var fecha = new Date();
+		var msj = "";
+
+		if      (fecha.getHours() < 7)  { msj = "Buenas noches";}
+		else if (fecha.getHours() < 12) { msj = "Buenos días";}
+		else if (fecha.getHours() < 21) { msj = "Buenas tardes";}
+		else                            { msj = "Buenas noches";}
+
+		var h1DOM = document.getElementById("h1");
+		h1DOM.innerHTML = msj;
+		fechaDOM = document.getElementById("fecha")
+		fechaDOM.innerHTML = fecha;
+
+		console.dir( h1DOM.outerHTML);
+		// Actividad solicitada en el ejercicio.
+		var bloqueDOM = document.getElementById("bloque");
+		var h2DOM = document.getElementById("h2");
+		var innerBloque = 
+			`<ul>`
+		  + `	<li>`
+		  + `		Propiedad innerHTML de id="h2" => `
+		  + `		<code>`
+		  + `			${h2DOM.innerHTML}`
+		  + `		</code>`
+		  + `	</li>`
+		  + `	<li>`
+		  + `		Propiedad outerHTML de id="h1" => `
+		  +	`		<code>`
+		  +	`			${ h1DOM.outerHTML.replace( /[<>]/g,
+		  									x => x==">" ? "&gt;" : "&lt;") }`
+		  + `		</code>`
+		  +	`	</li>`
+		  + `	<li>`
+		  +	`		Propiedad location.href => `
+		  +	`		<code>${location.href}</code>`
+		  +	`	</li>`
+		  + `	<li>`
+		  +	`		Propiedad location =>  `
+		  +	`		<code>${location}</code>`
+		  +	`	</li>`
+		  + `	<li>`
+		  +	`		Propiedad screen.width => `
+		  +	`		<code>${window.screen.width}</code>`
+		  +	`	</li>`
+		  + `	<li>`
+		  +	`		Propiedad screen.height => `
+		  +	`		<code>${window.screen.height}</code>`
+		  +	`	</li>`
+		  +	`</ul>`;
+		bloqueDOM.innerHTML = innerBloque;
+
+	</script>
+</body>
+</html>
