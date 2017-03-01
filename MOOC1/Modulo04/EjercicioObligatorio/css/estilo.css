@@ -1,0 +1,40 @@
+#res {
+  background-color: lightgray;
+  border: solid;
+  width: 81%;
+  height: 48px;
+  font-size: 20px;
+}
+
+#estado {
+  margin-top: 3px;
+  width: 81%;
+  height: 15px;
+  border: 1px solid;
+  font-size: 12px;
+}
+
+#btns {
+  width: 90%;
+}
+
+#btns button {
+  width: 22%;
+  height: 36px;
+  font-size: 18px;
+}
+
+#btns .numero {
+  background-color: lightgreen;
+  color: brown;
+}
+
+#btns .accion {
+  background-color: darkgreen;
+  color: white;
+}
+
+#btns .operador {
+  background-color: black;
+  color: red;
+}
