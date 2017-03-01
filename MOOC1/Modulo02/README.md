@@ -1,1 +1,0 @@
-El Ejercicio Opcional 2 y el Ejercicio Obligatorio del Módulo 2 es el mismo, debido a que el Ejercicio Obligatorio no era más que una ampliación del Ejercicio Opcional, de modo que se ha considerado hacer un Ejercicio obligatorio completo y enviarlo como opcional y obligatorio.
