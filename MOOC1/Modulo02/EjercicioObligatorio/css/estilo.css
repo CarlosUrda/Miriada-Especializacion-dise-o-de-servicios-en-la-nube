@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'proclamate_heavyheavy';
+    src: url('fonts/proclamate_heavy-webfont.eot');
+    src: url('fonts/proclamate_heavy-webfont.eot?#iefix') 
+            format('embedded-opentype'),
+         url('fonts/proclamate_heavy-webfont.woff') format('woff'),
+         url('fonts/proclamate_heavy-webfont.ttf') format('truetype'),
+         url('fonts/proclamate_heavy-webfont.svg#proclamate_heavyheavy') 
+            format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proclamate_incisedheavy';
+    src: url('fonts/proclamate_incised-webfont.eot');
+    src: url('fonts/proclamate_incised-webfont.eot?#iefix') 
+            format('embedded-opentype'),
+         url('fonts/proclamate_incised-webfont.woff') format('woff'),
+         url('fonts/proclamate_incised-webfont.ttf') format('truetype'),
+         url('fonts/proclamate_incised-webfont.svg#proclamate_incisedheavy') 
+            format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proclamate_lightlight';
+    src: url('fonts/proclamate_light-webfont.eot');
+    src: url('fonts/proclamate_light-webfont.eot?#iefix') 
+            format('embedded-opentype'),
+         url('fonts/proclamate_light-webfont.woff') format('woff'),
+         url('fonts/proclamate_light-webfont.ttf') format('truetype'),
+         url('fonts/proclamate_light-webfont.svg#proclamate_lightlight') 
+            format('svg');
+    font-weight: normal;
+    font-style: normal;              
+}
+
+@font-face {
+    font-family: 'kingthings_foundationregular';
+    src: url('fonts/Kingthings_Foundation-webfont.eot');
+    src: url('fonts/Kingthings_Foundation-webfont.eot?#iefix') 
+            format('embedded-opentype'),
+         url('fonts/Kingthings_Foundation-webfont.woff') format('woff'),
+         url('fonts/Kingthings_Foundation-webfont.ttf') format('truetype'),
+         url('fonts/Kingthings_Foundation-webfont.svg#kingthings_foundationregular') 
+            format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: kingthings_foundationregular, sans-serif;
+    padding: 0 30px 0 30px;
+    background: linear-gradient( #2A0173, #210C0C, #2A0173, #210C0C); 
+    color: grey;
+}
+
+#historia p:first-of-type::first-letter {
+    font-size:2.5em;
+    color: #ae7173;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-family: proclamate_incisedheavy, serif;
+    color: #FFE6E6;
+    fill: #FFE6E6;
+    font-size: 2.7em;
+}
+
+img.cruz {
+    flex-grow: 0;
+    width: 5em;
+    color: white;
+    fill: white;
+    margin: 15px;
+}
+
+h2 {
+    font-family: proclamate_lightlight, serif;    
+    color: #A5A5A5;
+    margin-top: 3em;
+    font-size: 1.7em;
+}
+
+h3 {
+    margin-top: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu-principal ul {
+    font-family: proclamate_heavyheavy, sans-serif;
+    display: flex;
+    font-size: 1.4em;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-principal li {
+    flex-grow: 1;
+    text-align: center;
+    background-color: #FFEBEB;
+    -webkit-box-shadow: 10px 9px 14px -4px rgba(255,255,255,0.39);
+    -moz-box-shadow: 10px 9px 14px -4px rgba(255,255,255,0.39);
+    box-shadow: 10px 9px 14px -4px rgba(255,255,255,0.39);
+    border-radius: 136px 0px 153px 0px / 110px 0px 110px 0px;
+    margin-bottom: 10px;
+}
+
+#menu-principal li a {
+    display: block;
+    color: #7200FF;
+    padding: 10px 20px;
+}
+
+#menu-principal li:hover {
+    background-color: #D798F5;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+#enlaces a, footer a {
+    color: #B15AFB;
+}
+
+.iframe {
+    position: relative;
+    padding: 20px;
+    height: 0;
+    overflow: hidden;
+    width: 50%;
+}
+
+.youtube{
+    padding-bottom: 30%; /* 16:9 */
+}
+
+.ign {
+    padding-bottom: 28%; /* 16:9 */
+}
+
+img.svg {
+    width: 30%;
+    display: block;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 770px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    img.cruz {
+        margin-top: 0px;
+    }
+    img.cruz:first-of-type {
+        display: none;
+    }
+
+    .iframe {
+        width: 90%;
+    }
+
+    .youtube{
+        padding-bottom: 52%; /* 16:9 */
+    }
+
+    .ign {
+        padding-bottom: 50%; /* 16:9 */
+    }
+
+    img.svg {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    img.svg {
+        width: 100%;
+    }
+}
+
+
